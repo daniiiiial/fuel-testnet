@@ -1,0 +1,16 @@
+# Install Fuel
+curl https://install.fuel.network | sh
+# Press y then Enter
+
+# Set Path
+source /root/.bashrc
+
+# Set fuelup testnet
+fuelup toolchain install latest
+fuelup self update
+fuelup update
+fuelup default latest
+fuelup default testnet
+
+# Check version
+fuelup --version
